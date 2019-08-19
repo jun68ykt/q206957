@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Counter = ({ name, count, increment, decrement }) => {
+const Counter = ({ name, count=0, increment, decrement }) => {
   return (
     <div>
-      <span>{count || 0}</span>
+      <span>{count}</span>
       <button onClick={() => { increment(name) }}>+1</button>
       <button onClick={() => { decrement(name) }}>-1</button>
     </div>
