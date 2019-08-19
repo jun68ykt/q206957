@@ -1,14 +1,16 @@
 export const INCREMENT = 'INCREMENT'
 export const DECREMENT = 'DECREMENT'
 
-export const onIncrement = () => {
+export const onIncrement = name => {
   return {
-    type: INCREMENT
+    type: INCREMENT,
+    name
   }
 }
 
-export const onDecrement = () => {
+export const onDecrement = name => {
   return {
-    type: DECREMENT
+    type: DECREMENT,
+    name
   }
 }

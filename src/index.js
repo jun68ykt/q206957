@@ -9,8 +9,8 @@ const store = createStore(reducer);
 
 render(
   <Provider store={store}>
-    <CounterContainer />
-    {/* ここにもう一つカウンターを設置したい */}
+    <CounterContainer name="foo" />
+    <CounterContainer name="bar" />
   </Provider>,
   document.getElementById('root')
 );
