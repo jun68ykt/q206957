@@ -2,8 +2,8 @@ import Counter from '../components/Counter'
 import { onIncrement, onDecrement } from '../actions'
 import { connect } from 'react-redux';
 
-const mapStateToProps = (state) => ({
-  count: state.counterReducer
+const mapStateToProps = (state, ownProps) => ({
+  count: state.counterReducer[ownProps.name]
 })
 
 const mapDispatchToProps = (dispatch) => ({
